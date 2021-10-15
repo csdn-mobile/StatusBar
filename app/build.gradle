@@ -26,5 +26,6 @@ android {
 }
 
 dependencies {
+    implementation project(':statusbar')
     implementation "androidx.appcompat:appcompat:$lib_appcompat"
 }
