@@ -33,7 +33,7 @@ allprojects {
 **Step 2. 添加项目依赖**
 ``` gradle
 dependencies {
-    implementation 'io.github.csdn-mobile:StatusBar:1.0.0'
+    implementation 'io.github.csdn-mobile:StatusBar:1.1.0'
 }
 ```
 **Step 3. 在Activity中添加代码**
@@ -55,5 +55,6 @@ StatusBar.Builder()
 ### 版本记录
 |版本号|更新内容|
 |---|---|
+|1.1.0|Fix bug|
 |1.0.0|First Version|
 
