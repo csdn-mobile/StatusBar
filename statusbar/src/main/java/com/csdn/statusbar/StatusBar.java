@@ -7,7 +7,6 @@ import com.csdn.statusbar.annotation.FontMode;
 import com.csdn.statusbar.core.Helper;
 import com.csdn.statusbar.core.HelperImpl;
 import com.csdn.statusbar.core.bean.BarColor;
-import com.csdn.statusbar.utils.StatusBarUtils;
 
 /**
  * @author kuanggang on 2021/10/14
@@ -18,7 +17,14 @@ public class StatusBar {
     }
 
     public static int getHeight(Context context) {
-        return StatusBarUtils.getStatusBarHeight(context);
+        int result = 0;
+        if (context != null) {
+            int resourceId = context.getResources().getIdentifier("status_bar_height", "dimen", "android");
+            if (resourceId > 0) {
+                result = context.getResources().getDimensionPixelSize(resourceId);
+            }
+        }
+        return result;
     }
 
     public static StatusBarBuilder Builder() {
