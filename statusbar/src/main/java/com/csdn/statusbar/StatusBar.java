@@ -7,6 +7,7 @@ import com.csdn.statusbar.annotation.FontMode;
 import com.csdn.statusbar.core.Helper;
 import com.csdn.statusbar.core.HelperImpl;
 import com.csdn.statusbar.core.bean.BarColor;
+import com.csdn.statusbar.core.bean.BarTransparent;
 
 /**
  * @author kuanggang on 2021/10/14
@@ -34,8 +35,8 @@ public class StatusBar {
     public static class StatusBarBuilder {
 
         private BarColor mStatusBarColor;
+        private BarTransparent mTransparent;
         private int mFontMode = 0;
-        private boolean isTransparent = false;
 
         private StatusBarBuilder() {
         }
@@ -46,7 +47,7 @@ public class StatusBar {
         }
 
         public StatusBarBuilder transparent(boolean isTransparent) {
-            this.isTransparent = isTransparent;
+            mTransparent = new BarTransparent(isTransparent);
             return this;
         }
 
@@ -61,7 +62,7 @@ public class StatusBar {
         public void change(Activity activity) {
             if (activity != null) {
                 Helper helper = HelperImpl.getInstance();
-                helper.changeStatusBar(activity, mStatusBarColor, mFontMode, isTransparent);
+                helper.changeStatusBar(activity, mStatusBarColor, mFontMode, mTransparent);
             }
         }
     }
