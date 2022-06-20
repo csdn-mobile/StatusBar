@@ -1,4 +1,4 @@
-package com.csdn.statusbar.annotation;
+package net.csdn.statusbar.annotation;
 
 import androidx.annotation.IntDef;
 

@@ -1,9 +1,9 @@
-package com.csdn.statusbar.core;
+package net.csdn.statusbar.core;
 
 import android.app.Activity;
 
-import com.csdn.statusbar.core.bean.BarColor;
-import com.csdn.statusbar.core.bean.BarTransparent;
+import net.csdn.statusbar.core.bean.BarColor;
+import net.csdn.statusbar.core.bean.BarTransparent;
 
 /**
  * @author kuanggang on 2021/10/14

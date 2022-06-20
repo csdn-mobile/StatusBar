@@ -1,4 +1,4 @@
-package com.csdn.statusbar.core.bean;
+package net.csdn.statusbar.core.bean;
 
 public class BarColor {
 

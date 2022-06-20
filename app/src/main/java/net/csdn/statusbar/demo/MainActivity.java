@@ -1,4 +1,4 @@
-package com.csdn.statusbar.demo;
+package net.csdn.statusbar.demo;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -6,8 +6,8 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.csdn.statusbar.StatusBar;
-import com.csdn.statusbar.annotation.FontMode;
+import net.csdn.statusbar.StatusBar;
+import net.csdn.statusbar.annotation.FontMode;
 
 public class MainActivity extends AppCompatActivity {
 

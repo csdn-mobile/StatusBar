@@ -1,13 +1,13 @@
-package com.csdn.statusbar;
+package net.csdn.statusbar;
 
 import android.app.Activity;
 import android.content.Context;
 
-import com.csdn.statusbar.annotation.FontMode;
-import com.csdn.statusbar.core.Helper;
-import com.csdn.statusbar.core.HelperImpl;
-import com.csdn.statusbar.core.bean.BarColor;
-import com.csdn.statusbar.core.bean.BarTransparent;
+import net.csdn.statusbar.annotation.FontMode;
+import net.csdn.statusbar.core.Helper;
+import net.csdn.statusbar.core.HelperImpl;
+import net.csdn.statusbar.core.bean.BarColor;
+import net.csdn.statusbar.core.bean.BarTransparent;
 
 /**
  * @author kuanggang on 2021/10/14

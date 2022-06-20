@@ -8,6 +8,7 @@
 |---|---|
 
 ### 注意
+* 从1.2.0开始，包地址从【com.csdn.statusbar】转变为【net.csdn.statusbar】
 * 最低支持版本为Android5.0（minSdkVersion 21）
 * 本项目仅提供AndroidX版本
 * 在setContentView()之后调用
@@ -33,7 +34,7 @@ allprojects {
 **Step 2. 添加项目依赖**
 ``` gradle
 dependencies {
-    implementation 'io.github.csdn-mobile:StatusBar:1.1.0'
+    implementation 'io.github.csdn-mobile:StatusBar:1.2.0'
 }
 ```
 **Step 3. 在Activity中添加代码**
@@ -55,6 +56,7 @@ StatusBar.Builder()
 ### 版本记录
 |版本号|更新内容|
 |---|---|
+|1.2.0|Change package name|
 |1.1.0|Fix bug|
 |1.0.0|First Version|
 
